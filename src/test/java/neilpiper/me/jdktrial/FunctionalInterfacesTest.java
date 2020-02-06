@@ -1,5 +1,6 @@
 package neilpiper.me.jdktrial;
 
+import java.util.LinkedList;
 import java.util.List;
 import java.util.function.Consumer;
 import org.junit.Test;
@@ -51,7 +52,9 @@ public class FunctionalInterfacesTest {
 
   @Test
   public void constructorReference() throws Exception {
-      List<String> stringList = List.of("a", "b", "b", "c", "d", "d");
+     // List<String> stringList = LinkedList.of("a", "b", "b", "c", "d", "d");
+      
+      
 //      assertEquals(6, stringList.size());
 
       // Add the strings to a Set
