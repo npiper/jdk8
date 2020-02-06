@@ -120,8 +120,10 @@ R apply(T t)
 
 ## Comparator
 
+![Comparator](./src/images/sort-ascending.png)
 
 java.util.Comparator - used for Streams with an Order (e.g. Integer) - max, min
+
 
 ## Collector
 
