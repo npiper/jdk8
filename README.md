@@ -147,6 +147,30 @@ Don't do anything stateful in parallel
 ```
 
 
+## Streams
+
+### Stream Pipelines
+
+![Consumer](./src/images/tasks.png)
+
+#### Parallelizing Streams
+
+```
+parallelStream()
+```
+
+### Map / Reduce
+
+Reduction operations.. are
+Terminal operations that produce
+one value from a stream.
+
+(e.g. Sum, Count, Max, Min, Average, Mean,..)
+
+![Consumer](./src/images/aggregate.png)
+
+
+
 ## Project Structure
 
 
