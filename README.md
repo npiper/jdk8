@@ -94,8 +94,7 @@ boolean test(T t)
 
 ## Suppliers
 
-![Consumer](./src/images/duplicate.png)
-
+<img src="./src/images/duplicate.png" width="256px" height="256px">
 
 
 Create an object, but only when we need it - adds to the stream / terminal operation
@@ -120,10 +119,19 @@ R apply(T t)
 
 ## Comparator
 
-![Comparator](./src/images/sort-ascending.png)
+<img src="./src/images/sort-ascending.png" width="256px" height="256px"/>
 
 java.util.Comparator - used for Streams with an Order (e.g. Integer) - max, min
 
+Can be used to avoid static inner Comparator classes and use `. stream().sorted(...)`
+
+```
+    List<Human> sortedHumans = humans.stream()
+      .sorted(Comparator.comparing(Human::getName))
+      .collect(Collectors.toList());
+```
+
+https://www.baeldung.com/java-8-sort-lambda
 
 ## Collector
 
